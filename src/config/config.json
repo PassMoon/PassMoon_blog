@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Astroplate",
-    "base_url": "https://astroplate.netlify.app",
+    "title": "PassMoon",
+    "base_url": "https://pass-moon-blog.vercel.app/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "30",
-    "logo_text": "Astroplate"
+    "logo_text": "PassMoon"
   },
 
   "settings": {
@@ -23,8 +23,8 @@
   },
 
   "announcement": {
-    "enable": true,
-    "content": "<span class='text-center block'>♥️ Loving Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
+    "enable": false,
+    "content": "<span class='text-center block'>♥️ Loving PassMoon? <a class='underline' href='https://github.com/PassMoon' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
     "expire_days": 7
   },
 
@@ -36,7 +36,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Github",
-    "link": "https://github.com/zeon-studio/astroplate"
+    "link": "https://github.com/PassMoon"
   },
 
   "google_tag_manager": {
@@ -45,7 +45,7 @@
   },
 
   "disqus": {
-    "enable": true,
+    "enable": false,
     "shortname": "themefisher-template",
     "settings": {}
   },
