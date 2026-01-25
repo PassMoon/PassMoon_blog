@@ -1,7 +1,8 @@
 ---
 import BlogCard from "@/components/BlogCard.astro";
 import Share from "@/components/Share.astro";
-import Disqus from "@/helpers/Disqus";
+import config from "@/config/config.json";
+import Waline from "@/components/Waline.tsx";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import similarItems from "@/lib/utils/similarItems";
@@ -92,10 +93,21 @@ const { title, description, author, categories, image, date, tags } = post.data;
             />
           </div>
         </div>
-        <Disqus className="mt-20" client:load />
+        {
+          config.waline?.enable && (
+            <div class="mt-20">
+              <Waline 
+                client:only="react"
+                serverURL={config.waline.server_url}
+                path={Astro.url.pathname}
+              />
+            </div>
+          )
+        }
       </article>
     </div>
 
+    {/*
     <!-- Related posts -->
     <div class="section pb-0">
       <h2 class="h3 mb-12 text-center">Related Posts</h2>
@@ -110,4 +122,5 @@ const { title, description, author, categories, image, date, tags } = post.data;
       </div>
     </div>
   </div>
+  */}
 </section>

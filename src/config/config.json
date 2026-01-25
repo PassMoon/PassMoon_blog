@@ -50,6 +50,11 @@
     "settings": {}
   },
 
+  "waline": {
+    "enable": true,
+    "server_url": "https://chipsetblog.vercel.app"
+  },
+
   "metadata": {
     "meta_author": "zeon.studio",
     "meta_image": "/images/og-image.png",
